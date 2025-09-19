@@ -1,72 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <div>
-<h2>
-  Hi!
-</h2>
-<h1 class="hi"> I am Karanbir</h1>
-<h1>a web developer
-</h1>
-  </div>
- <div class="cone">
-  <h3><a href="about.html" class="button">About</a>
-</h3>
-
-<p>
-  Web development is the art of building websites and web applications using technologies like HTML, CSS, and JavaScript. It combines creativity and logic to create user-friendly digital experiences. Developers design layouts, write code, and optimize performance to ensure fast, responsive, and accessible sites across devices. It’s a constantly evolving field
-  Web development is a dynamic and essential field that involves creating websites and web applications using technologies like HTML, CSS, and JavaScript. It blends design, structure, and functionality to deliver engaging digital experiences. Front-end developers focus on the visual and interactive aspects of a site, ensuring it looks good and works smoothly across devices. Back-end developers handle server-side logic, databases, and application performance. Together, they build everything from simple blogs to complex e-commerce platforms. Web development also includes responsive design, accessibility, and optimization for speed and SEO. As the internet continues to evolve, developers must stay updated with new tools, frameworks, and best practices. Whether you're building a personal portfolio or a global business site, web development empowers you to bring ideas to life online. It’s a creative and technical craft that shapes how we interact with the digital world every day.
-
-</p>
-</div>
-<img src="generate a photo of .png" width="500px">
-  <body>
-
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karanbir | Web Developer</title>
   <style>
- div{
-  color:white
- }
- div{
-  margin-left: 38px;
- }
-
-    body{
-background-color:black ;
+    /* Base styles for mobile */
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
     }
-    
-    a{
-      
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  padding: 10px;
-  background-color: aliceblue;
-  color: black;
-}
-img{
-  position: absolute;
-  top: 0;
- right:00px;
-  width: 150px; /* optional size */
-  height: auto;
-  border:5px solid white
-}
-  @media  {max-width: 680px;
-  a{
-    margin-bottom: 0;
-    margin-left: 10px;
-  }
-  
-  img{
-    margin-top: 0px;
-    right: 0px;
-  }
-          
 
-      
-   
-   
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 10px 20px;
+      background-color: aliceblue;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .content p {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 1rem;
+      max-width: 600px;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+
+    /* Tablet styles */
+    @media (min-width: 600px) {
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .content p {
+        max-width: 60%;
+      }
+
+      .content img {
+        max-width: 35%;
+      }
+    }
   </style>
+</head>
+<body>
+  <header>
+    <h2>Hi!</h2>
+    <h1 class="hi">I am Karanbir</h1>
+    <h1>a web developer</h1>
+  </header>
 
+  <main class="content">
+    <div>
+      <a href="about.html" class="button">About</a>
+      <p>
+        Web development is the art of building websites and web applications using technologies like HTML, CSS, and JavaScript. It combines creativity and logic to create user-friendly digital experiences. Developers design layouts, write code, and optimize performance to ensure fast, responsive, and accessible sites across devices. It’s a constantly evolving field that blends design, structure, and functionality to deliver engaging digital experiences.
+      </p>
+    </div>
+    <img src="images/profile.png" alt="Karanbir's photo" />
+  </main>
+</body>
 </html>
-
